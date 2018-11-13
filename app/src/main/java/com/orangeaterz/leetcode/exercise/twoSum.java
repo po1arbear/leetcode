@@ -1,4 +1,4 @@
-package com.orangeaterz.leetcode;
+package com.orangeaterz.leetcode.exercise;
 
 public class twoSum {
 
