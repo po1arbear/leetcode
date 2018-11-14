@@ -1,6 +1,9 @@
 package com.orangeaterz.leetcode.exercise;
 
-public class Solution {
+/**
+ * 两数之和
+ */
+public class AddTwoNums {
     class ListNode {
         int val;
         ListNode next;

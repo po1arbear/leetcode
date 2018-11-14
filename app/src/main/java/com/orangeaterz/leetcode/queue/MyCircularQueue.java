@@ -22,10 +22,10 @@ class MyCircularQueue {
      * Insert an element into the circular queue. Return true if the operation is successful.
      */
     public boolean enQueue(int value) {
-        if (isFull() == true) {
+        if (isFull()) {
             return false;
         }
-        if (isEmpty() == true) {
+        if (isEmpty()) {
             head = 0;
         }
         tail = (tail + 1) % size;
@@ -37,7 +37,7 @@ class MyCircularQueue {
      * Delete an element from the circular queue. Return true if the operation is successful.
      */
     public boolean deQueue() {
-        if (isEmpty() == true) {
+        if (isEmpty()) {
             return false;
         }
         if (head == tail) {
@@ -53,7 +53,7 @@ class MyCircularQueue {
      * Get the front item from the queue.
      */
     public int Front() {
-        if (isEmpty() == true) {
+        if (isEmpty()) {
             return -1;
         }
         return data[head];
@@ -63,7 +63,7 @@ class MyCircularQueue {
      * Get the last item from the queue.
      */
     public int Rear() {
-        if (isEmpty() == true) {
+        if (isEmpty()) {
             return -1;
         }
         return data[tail];

@@ -1,5 +1,8 @@
 package com.orangeaterz.leetcode.exercise;
 
+/**
+ * 两数相加
+ */
 public class twoSum {
 
     public static void main(String[] args) {
