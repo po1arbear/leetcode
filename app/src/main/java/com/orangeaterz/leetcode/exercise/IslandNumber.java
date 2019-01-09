@@ -6,7 +6,6 @@ public class IslandNumber {
 
     public static void main(String[] ars) {
 
-
     }
 //            [1, 1, 0, 0, 0],
 //            [0, 1, 0, 0, 1],
@@ -36,9 +35,8 @@ public class IslandNumber {
 
     public static void checkPoint(boolean[][] grid, int i, int j) {
         if (i < 0 || i >= length || width < 0 || j >= width) return;
-
         if (grid[i][j]) {
-            grid[i][j] = false;//避免二次判断
+            grid[i][j] = false;
             checkPoint(grid, i - 1, j);
             checkPoint(grid, i + 1, j);
             checkPoint(grid, i, j - 1);
